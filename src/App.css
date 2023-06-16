@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root {
+    --color-141312 : #141312;
+    --color-ffa54a : #ffa54a;
+    --color--ffc171 : #ffc171;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-141312);
+    color: var(--color-ffa54a);
+}
+
+
+/* HEADER */
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-ffa54a);
+}
+
+#navlink {
+    color: var(--color-ffa54a);
+    position: relative;
+}
+
+#navlink::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color--ffc171);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+#navlink:hover {
+    color: var(--color--ffc171);
+}
+
+#navlink:hover:after {
+    width: 100%
+}
+
+.nav-mobile {
+    background-color: var(--color-141312);
+}
+
+#button-hamburger {
+    background: var(--color-ffa54a);
+}
+
+
+/* FIN HEADER */
+
+/* HOME */
+
+.burger-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.burger-card:hover {
+    transform: scale(1.02);
+}
+
+#card-price {
+    color: var(--color-ffa54a);
+}
+
+/* FIN HOME */
+
+/* PRODUCTS */
+
+
+#button-search:hover {
+ transform: rotate(90deg);
+}
+
+#img-card {
+    max-height: 15rem;
+}
+
+
+/* FIN PRODUCTS */
+
+/* PAGEPRODUCTS */
+
+#product-img {
+    max-height: 30rem;
+}
+
+/* FIN PAGEPRODUCTS */
